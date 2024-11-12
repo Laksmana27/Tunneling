@@ -254,40 +254,40 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan} │                  ${BIWhite}${UWhite}SCRIPT BY EncryptedHaven${NC}"                     │
+echo -e "${BICyan} │                  ${BIWhite}${UWhite}SCRIPT BY EncryptedHaven${NC}"                     
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}" 
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}" 
-echo -e "${BICyan} │  ${BICyan}OS        :  ${BIWhite}${UWhite}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"│
-echo -e "${BICyan} │  ${BICyan}CPU       :  ${BIWhite}$cpu_usage${NC}"                                      │
-echo -e "${BICyan} │  ${BICyan}NS        :  ${BIWhite}$(cat /root/nsdomain)${NC}"                           │
-echo -e "${BICyan} │  ${BICyan}DOMAIN    :  ${BIWhite}$(cat /etc/xray/domain)${NC}"                         │
-echo -e "${BICyan} │  ${BICyan}RAM       :  ${BIWhite}$totalram MB${NC}"                                    │
-echo -e "${BICyan} │  ${BICyan}SWAP RAM  :  ${BIWhite}$uram / $tram MB${NC}"                                │
-echo -e "${BICyan} │  ${BICyan}IP-VPS    :  ${BIWhite}$IPVPS${NC}"                                          │
-echo -e "${BICyan} │  ${BICyan}DEVELOVER :  ${BIWhite}EncryptedHaven${NC}"                                  │
+echo -e "${BICyan} │  ${BICyan}OS        :  ${BIWhite}${UWhite}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
+echo -e "${BICyan} │  ${BICyan}CPU       :  ${BIWhite}$cpu_usage${NC}"                                      
+echo -e "${BICyan} │  ${BICyan}NS        :  ${BIWhite}$(cat /root/nsdomain)${NC}"                           
+echo -e "${BICyan} │  ${BICyan}DOMAIN    :  ${BIWhite}$(cat /etc/xray/domain)${NC}"                         
+echo -e "${BICyan} │  ${BICyan}RAM       :  ${BIWhite}$totalram MB${NC}"                                    
+echo -e "${BICyan} │  ${BICyan}SWAP RAM  :  ${BIWhite}$uram / $tram MB${NC}"                                
+echo -e "${BICyan} │  ${BICyan}IP-VPS    :  ${BIWhite}$IPVPS${NC}"                                          
+echo -e "${BICyan} │  ${BICyan}DEVELOVER :  ${BIWhite}EncryptedHaven${NC}"                                  
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}" 
 echo -e "${BICyan} │SSH-WS ${NC}: $ressh""│${BICyan} NGINX ${NC}: $resngx""│${BICyan} PROXY ${NC}: $resv2r"│
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}" 
 echo -e "${BICyan} ┌──────────────────────────────┐${NC}" 
 echo -e "${BICyan} │ ${BIWhite}SSH-WS  │ VMESS │ VLESS │TROJAN $NC" │ 
-echo -e "${BICyan} │ ${White} $ssh1    $vma    $vla       $tra $NC"   │
+echo -e "${BICyan} │ ${White} $ssh1    $vma    $vla       $tra $NC"  │
 echo -e "${BICyan} └──────────────────────────────┘${NC}" 
 echo -e "${BICyan} ┌──────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}01${BICyan}] SSH-WS  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}02${BICyan}] VMESS   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}03${BICyan}] VLESS   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}04${BICyan}] TROJAN  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}05${BICyan}] SETING  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}06${BICyan}] TRIALL  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}07${BICyan}] BACKUP  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}08${BICyan}] ADD-HOST ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"      │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}09${BICyan}] RUNNING  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"      │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}10${BICyan}] INSTALL UDP ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"   │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}11${BICyan}] INSTALL BOT ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"   │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}12${BICyan}] BANDWITH ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"      │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}13${BICyan}] THEMA ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"         │
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}14${BICyan}] UPDATE SCRIPT ${BICyan}[${BIWhite}Menu${BICyan}]${NC}" │
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}01${BICyan}] SSH-WS  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}02${BICyan}] VMESS   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
+echo -e "${ICyan}  │  ${BICyan}[${BIWhite}03${BICyan}] VLESS   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}04${BICyan}] TROJAN  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}05${BICyan}] SETING  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}06${BICyan}] TRIALL  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}07${BICyan}] BACKUP  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}08${BICyan}] ADD-HOST ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"      
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}09${BICyan}] RUNNING  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"      
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}10${BICyan}] INSTALL UDP ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"   
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}11${BICyan}] INSTALL BOT ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"   
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}12${BICyan}] BANDWITH ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"      
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}13${BICyan}] THEMA ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"         
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}14${BICyan}] UPDATE SCRIPT ${BICyan}[${BIWhite}Menu${BICyan}]${NC}" 
 echo -e "${BICyan} └──────────────────────────────────────────────────────┘${NC}"
 DATE=$(date +'%d %B %Y')
 datediff() {
