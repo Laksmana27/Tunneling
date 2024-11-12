@@ -46,7 +46,7 @@ link="trojan-go://${uuid}@isi_bug_disini:${trgo}/?sni=${domain}&type=ws&host=${d
 link1="trojan://${uuid}@isi_bug_disini:${trgo}/?sni=${domain}&type=ws&host=${domain}&path=%2Ftrojango#$user"
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m          TROJAN GO          \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m         TROJAN GO PREMIUM         \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Remarks    : ${user}" | tee -a /etc/log-create-user.log
 echo -e "limit ip   : ${limit} ( Devic )"
@@ -64,7 +64,7 @@ echo -e "========================="
 echo -e "Link TrGo  		: ${link}" | tee -a /etc/log-create-user.log
 echo -e "Link TrGo (v2rayNG)	: ${link1}" | tee -a /etc/log-create-user.log
 echo -e "========================="
-echo -e "Script Mod By Laksmana27"
+echo -e "Script Mod By EncryptedHaven"
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
 
