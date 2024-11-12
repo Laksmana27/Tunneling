@@ -271,24 +271,17 @@ echo -e "${BICyan} ┌───────────────────�
 echo -e "${BICyan} │SSH-WS ${NC}: $ressh""│${BICyan} NGINX ${NC}: $resngx""│${BICyan} PROXY ${NC}: $resv2r"│
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}" 
 echo -e "${BICyan} ┌──────────────────────────────┐${NC}" 
-echo -e "${BICyan} │ ${BIWhite}SSH-WS  │ VMESS │ VLESS $NC" │ 
-echo -e "${BICyan} │ ${White} $ssh1       $vma    $vla"
+echo -e "${BICyan} │ ${BIWhite}SSH-WS  │ VMESS │ VLESS $NC" 
+echo -e "${BICyan} │ ${White} $ssh1         $vma       $vla"
 echo -e "${BICyan} └──────────────────────────────┘${NC}" 
 echo -e "${BICyan} ┌──────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}01${BICyan}] SSH-WS  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}02${BICyan}] VMESS   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}03${BICyan}] VLESS   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}04${BICyan}] TROJAN  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}05${BICyan}] SETING  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}06${BICyan}] TRIALL  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}07${BICyan}] BACKUP  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}08${BICyan}] ADD-HOST ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"      
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}09${BICyan}] RUNNING  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"      
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}10${BICyan}] INSTALL UDP ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"   
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}11${BICyan}] INSTALL BOT ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"   
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}12${BICyan}] BANDWITH ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"      
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}13${BICyan}] THEMA ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"         
-echo -e "${BICyan} │  ${BICyan}[${BIWhite}14${BICyan}] UPDATE SCRIPT ${BICyan}[${BIWhite}Menu${BICyan}]${NC}" 
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}01${BICyan}] SSH-WS  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"  "${BICyan}[${BIWhite}08${BICyan}] ADD-HOST      ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}02${BICyan}] VMESS   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"  "${BICyan}[${BIWhite}09${BICyan}] RUNNING       ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"   
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}03${BICyan}] VLESS   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"  "${BICyan}[${BIWhite}10${BICyan}] INSTALL UDP   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"          
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}04${BICyan}] TROJAN  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"  "${BICyan}[${BIWhite}11${BICyan}] INSTALL BOT   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}05${BICyan}] SETING  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"  "${BICyan}[${BIWhite}12${BICyan}] CEK BANDWIDTH ${BICyan}[${BIWhite}Menu${BICyan}]${NC}" 
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}06${BICyan}] TRIALL  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"  "${BICyan}[${BIWhite}13${BICyan}] MENU THEMA    ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"     
+echo -e "${BICyan} │  ${BICyan}[${BIWhite}07${BICyan}] BACKUP  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"  "${BICyan}[${BIWhite}14${BICyan}] UPDATE SCRIPT ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"        
 echo -e "${BICyan} └──────────────────────────────────────────────────────┘${NC}"
 DATE=$(date +'%d %B %Y')
 datediff() {
@@ -298,7 +291,8 @@ datediff() {
 }
 mai="datediff "$Exp" "$DATE""
 echo -e "        ${BICyan}┌─────────────────────────────────────┐${NC}"
-echo -e "        ${BICyan}│$NC Version       : $(cat /opt/.ver) Last Update ${NC}"
+echo -e "        ${BICyan}│$NC Version       : $(cat /opt/.ver) 
+Last Update ${NC}"
 
 echo -e "       ${BICyan} │$NC DEVELOVER  : ${BIWhite} By EncryptedHaven${NC}"
 echo -e "        ${BICyan}│$NC ${White}User          :\033[1;36m $Name \e[0m"
