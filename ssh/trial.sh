@@ -121,6 +121,25 @@ echo -e "Payload WS" | tee -a /etc/log-create-user.log
 echo -e "
 GET / HTTP/1.1[crlf]Host: $(cat /etc/xray/domain)[crlf]Upgrade: websocket[crlf][crlf]
 " | tee -a /etc/log-create-user.log
+echo -e "Payload ALL OPOK" | tee -a /etc/log-create-user.log
+echo -e "
+GET / HTTP/1.1[crlf]Host: [host_port][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]X-Forward-Host: isi bug[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf] 
+(WEBSOKET v1) CONNECT / HTTP/1.1[crlf]Host: [host_port][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]X-Online-Host: isi bug[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]
+" | tee -a /etc/log-create-user.log
+echo -e "Payload SSL" | tee -a /etc/log-create-user.log
+echo -e "
+GET-CDN 
+wss://bug.com [protocol][crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf] (v1) GET wss://bug.com [protocol][crlf]Host: [host][crlf]Upgrade: websocket[crlf][crlf]
+" | tee -a /etc/log-create-user.log
+echo -e "Payload Enhanced" | tee -a /etc/log-create-user.log
+echo -e "
+PATCH / HTTP/1.1[crlf]Host: [host_port][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]X-Forward-Host: isi bug[crlf]Connection: Keep-Alive[crlf]Upgrade: websocket[crlf][crlf] 
+" | tee -a /etc/log-create-user.log
+echo -e "Payload Direct" | tee -a /etc/log-create-user.log
+echo -e "
+GET /worryfree/ssh HTTP/1.1[crlf]Host: BUG[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]
+" | tee -a /etc/log-create-user.log
+echo -e "
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
