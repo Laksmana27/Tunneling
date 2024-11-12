@@ -316,5 +316,7 @@ case $opt in
 13) clear ; menu-theme ;;
 14) clear ; update ;;
 15) clear ; add-bot-panel ;;
+0) clear ; menu ;;
 x) exit ;;
+*) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
 esac
