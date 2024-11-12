@@ -293,11 +293,10 @@ mai="datediff "$Exp" "$DATE""
 echo -e "${BICyan}┌──────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan}│ ${BOLD}${LIGHT}Client    = $Name                           ${NC}"
 echo -e "${BICyan}│ ${BOLD}${LIGHT}Expired   = $Exp                            ${NC}"
-echo -e "${BICyan}│ ${BOLD}${LIGHT}Developer = By EncryptedHaven                      ${NC}"
+echo -e "${BICyan}│ ${BOLD}${LIGHT}Developer = By EncryptedHaven               ${NC}"
 echo -e "${BICyan}│ ${BOLD}${LIGHT}Version   = 3.0.0 LTS                       ${NC}"
 echo -e "${BICyan}└──────────────────────────────────────────────────┘${NC}"
-────────────────────────────────┘${NC}"
-echo
+echo -e "
 read -p " Select menu : " opt
 echo -e ""
 case $opt in
