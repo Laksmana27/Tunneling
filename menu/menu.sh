@@ -271,7 +271,7 @@ echo -e "${BICyan} ┌───────────────────�
 echo -e "${BICyan} │SSH-WS ${NC}: $ressh""│${BICyan} NGINX ${NC}: $resngx""│${BICyan} PROXY ${NC}: $resv2r" Good 
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}" 
 echo -e "${BICyan} ┌──────────────────────────────────────────────────────┐${NC}" 
-echo -e "${BICyan} │ ${BIWhite}SSH-WS  │ VMESS │ VLESS   │  TROJAN   │  GOOD"
+echo -e "${BICyan} │ ${BIWhite}SSH-WS  │ VMESS │ VLESS   │  TROJAN   │  GOOD$NC"
 echo -e "${BICyan} │ ${White}  $ssh1         $vma       $vla           $tra"
 echo -e "${BICyan} └──────────────────────────────────────────────────────┘${NC}" 
 echo -e "${BICyan} ┌──────────────────────────────────────────────────────┐${NC}"
