@@ -290,12 +290,18 @@ datediff() {
     echo -e "        ${BICyan}│$NC Expiry In     : $(( (d1 - d2) / 86400 )) Days $NC"
 }
 mai="datediff "$Exp" "$DATE""
-echo -e "${BICyan}┌──────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan}│ ${BOLD}${LIGHT}Client    = $Name                           ${NC}"
-echo -e "${BICyan}│ ${BOLD}${LIGHT}Expired   = $Exp                            ${NC}"
-echo -e "${BICyan}│ ${BOLD}${LIGHT}Developer = By EncryptedHaven               ${NC}"
-echo -e "${BICyan}│ ${BOLD}${LIGHT}Version   = 3.0.0 LTS                       ${NC}"
-echo -e "${BICyan}└──────────────────────────────────────────────────┘${NC}"
+echo -e "        ${BICyan}┌─────────────────────────────────────┐${NC}"
+echo -e "        ${BICyan}│$NC Version       : $(cat /opt/.ver) Last Update ${NC}"
+echo -e "        ${BICyan}│$NC ${GREEN}User          :\033[1;36m $Name \e[0m"
+if [ $exp \< 1000 ];
+then
+echo -e "          $BICyan│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
+else
+    datediff "$Exp" "$DATE"
+fi;
+echo -e "        ${BICyan}└─────────────────────────────────────┘${NC}"
+echo -e 
+read -p " Select menu : " opt
 echo -e ""
 case $opt in
 1) clear ; menu-ssh ;;
