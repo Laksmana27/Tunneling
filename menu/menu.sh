@@ -304,16 +304,17 @@ case $opt in
 1) clear ; menu-sshh ;;
 2) clear ; menu-vmess ;;
 3) clear ; menu-vless ;;
-4) clear ; menu-trgo ;;
-5) clear ; menu-trojan ;;
-6) clear ; status ;;
-7) clear ; restarts ;;
-8) clear ; menu-backup ;;
-9) clear ; passwd ;;
-10) clear ; menu-set ;;
-11) clear ; menu-domain ;;
-12) clear ; clearcache ;;
-13) clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
-14) clear ; bw ;;
+4) clear ; menu-trojan ;;
+5) clear ; menu-set ;;
+6) clear ; menu-trial ;;
+7) clear ; menu-backup ;;
+8) clear ; add-host ;;
+9) clear ; running ;;
+10) clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
+11) clear ; xolpanel ;;
+12) clear ; bw ;;
+13) clear ; menu-theme ;;
+14) clear ; update ;;
+15) clear ; add-bot-panel ;;
 x) exit ;;
 esac
