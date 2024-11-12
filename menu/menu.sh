@@ -268,7 +268,7 @@ echo -e "${BICyan} │  ${BICyan}IP-VPS    :  ${BIWhite}$IPVPS${NC}"
 echo -e "${BICyan} │  ${BICyan}DEVELOVER :  ${BIWhite}EncryptedHaven${NC}"                                  
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}" 
-echo -e "${BICyan} │SSH-WS ${NC}: $ressh""│${BICyan} NGINX ${NC}: $resngx""│${BICyan} PROXY ${NC}: $resv2r""│GOOD${NC}
+echo -e "${BICyan} │SSH-WS ${NC}: $ressh""│${BICyan} NGINX ${NC}: $resngx""│${BICyan} PROXY ${NC}: $resv2r" Good 
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}" 
 echo -e "${BICyan} ┌──────────────────────────────────────────────────────┐${NC}" 
 echo -e "${BICyan} │ ${BIWhite}SSH-WS  │ VMESS │ VLESS   │  TROJAN   │  GOOD$NC" 
