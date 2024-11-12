@@ -271,7 +271,7 @@ echo -e "${BICyan} ┌───────────────────�
 echo -e "${BICyan} │SSH-WS ${NC}: $ressh""│${BICyan} NGINX ${NC}: $resngx""│${BICyan} PROXY ${NC}: $resv2r" Good 
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}" 
 echo -e "${BICyan} ┌──────────────────────────────────────────────────────┐${NC}" 
-echo -e "${BICyan} │ ${BIWhite}SSH-WS  │ VMESS │ VLESS   │  TROJAN   │  GOOD$NC" 
+echo -e "${BICyan} │ ${BIWhite}SSH-WS  │ VMESS │ VLESS   │  TROJAN   │  GOOD"
 echo -e "${BICyan} │ ${White}  $ssh1         $vma       $vla           $tra"
 echo -e "${BICyan} └──────────────────────────────────────────────────────┘${NC}" 
 echo -e "${BICyan} ┌──────────────────────────────────────────────────────┐${NC}"
@@ -290,17 +290,13 @@ datediff() {
     echo -e "        ${BICyan}│$NC Expiry In     : $(( (d1 - d2) / 86400 )) Days $NC"
 }
 mai="datediff "$Exp" "$DATE""
-echo -e "        ${BICyan}┌─────────────────────────────────────┐${NC}"
-echo -e "        ${BICyan}│$NC Version       : $(cat /opt/.ver) |  Last Update ${NC}"
-echo -e "       ${BICyan} │$NC DEVELOVER  : ${BIWhite} By EncryptedHaven${NC}"
-echo -e "        ${BICyan}│$NC ${White}User          :\033[1;36m $Name \e[0m"
-if [ $exp \< 1000 ];
-then
-echo -e "          $BICyan│$NC License      : ${White}$sisa_hari$NC Days Tersisa $NC"
-else
-    datediff "$Exp" "$DATE"
-fi;
-echo -e "        ${BICyan}└─────────────────────────────────────┘${NC}"
+echo -e "${BICyan}┌──────────────────────────────────────────────────┐${NC}"
+echo -e "${BICyan}│ ${BOLD}${LIGHT}Client    = $Name                           ${NC}"
+echo -e "${BICyan}│ ${BOLD}${LIGHT}Expired   = $Exp                            ${NC}"
+echo -e "${BICyan}│ ${BOLD}${LIGHT}Developer = By EncryptedHaven                      ${NC}"
+echo -e "${BICyan}│ ${BOLD}${LIGHT}Version   = 3.0.0 LTS                       ${NC}"
+echo -e "${BICyan}└──────────────────────────────────────────────────┘${NC}"
+────────────────────────────────┘${NC}"
 echo
 read -p " Select menu : " opt
 echo -e ""
