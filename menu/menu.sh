@@ -257,6 +257,7 @@ echo -e "${BICyan} ┌───────────────────�
 echo -e "${BICyan} │                  ${BIWhite}${UWhite}SCRIPT BY EncryptedHaven${NC}"                     
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}" 
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}" 
+echo -e "${BICyan} │"
 echo -e "${BICyan} │  ${BICyan}OS        :  ${BIWhite}${UWhite}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
 echo -e "${BICyan} │  ${BICyan}CPU       :  ${BIWhite}$cpu_usage${NC}"                                      
 echo -e "${BICyan} │  ${BICyan}NS        :  ${BIWhite}$(cat /root/nsdomain)${NC}"                           
@@ -276,7 +277,7 @@ echo -e "${BICyan} └───────────────────�
 echo -e "${BICyan} ┌──────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan} │  ${BICyan}[${BIWhite}01${BICyan}] SSH-WS  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
 echo -e "${BICyan} │  ${BICyan}[${BIWhite}02${BICyan}] VMESS   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
-echo -e "${ICyan}  │  ${BICyan}[${BIWhite}03${BICyan}] VLESS   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
+echo -e "${ICyan} │  ${BICyan}[${BIWhite}03${BICyan}] VLESS   ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
 echo -e "${BICyan} │  ${BICyan}[${BIWhite}04${BICyan}] TROJAN  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
 echo -e "${BICyan} │  ${BICyan}[${BIWhite}05${BICyan}] SETING  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
 echo -e "${BICyan} │  ${BICyan}[${BIWhite}06${BICyan}] TRIALL  ${BICyan}[${BIWhite}Menu${BICyan}]${NC}"       
@@ -298,10 +299,11 @@ datediff() {
 mai="datediff "$Exp" "$DATE""
 echo -e "        ${BICyan}┌─────────────────────────────────────┐${NC}"
 echo -e "        ${BICyan}│$NC Version       : $(cat /opt/.ver) Last Update ${NC}"
-echo -e "        ${BICyan}│$NC ${GREEN}User          :\033[1;36m $Name \e[0m"
+echo -e "       ${BICyan} │$NC DEVELOVER  : ${BIWhite} By EncryptedHaven${NC}"
+echo -e "        ${BICyan}│$NC ${White}User          :\033[1;36m $Name \e[0m"
 if [ $exp \< 1000 ];
 then
-echo -e "          $BICyan│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
+echo -e "          $BICyan│$NC License      : ${White}$sisa_hari$NC Days Tersisa $NC"
 else
     datediff "$Exp" "$DATE"
 fi;
